@@ -1,0 +1,66 @@
+html {
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* All your CSS goes BELOW this line! */
+
+/* Main Header */
+.header {
+    /* Colors */
+    background: rgb(76, 76, 233);
+    color: white;
+    /* Arrangement */
+    display: grid;
+    place-items: end center;
+    min-height: 60vh;
+}
+
+/* Header card */
+.header-card {
+    display: grid;
+    text-align: center;
+    place-items: center;
+    background: rgba(150, 45, 45, 0.897);
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.header-card img {
+    width: 60%;
+    height: auto;
+    margin: 20px;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
+.header-card h2 {
+    margin: 0;
+}
+
+/* Info */
+.info {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 50px;
+}
+
+/* Bio-info */
+.info-card {
+    border: solid 1px black;
+    min-height: 25vh;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.info-card h3,
+p {
+    padding-left: 20px;
+}
